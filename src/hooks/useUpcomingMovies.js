@@ -11,7 +11,7 @@ import { API_OPTIONS } from "../utils/constants";
 
             const upcomingMovies = useSelector((stor) => stor.movies.upcomingMovies);
             const getUpcomingMovies = async () => {
-                const data = await fetch("https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1",
+                const data = await fetch("https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1'",
                 API_OPTIONS);
                 const json = await data.json();
                 dispatch(addUpcomingMovies(json.results));
@@ -19,7 +19,8 @@ import { API_OPTIONS } from "../utils/constants";
             };
 
             useEffect(()=>{
-                !upcomingMovies && getUpcomingMovies();
+                !upcomingMovies &&
+                 getUpcomingMovies();
             },[])
         }
 

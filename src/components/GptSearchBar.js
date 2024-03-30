@@ -34,7 +34,7 @@ const promiseArray = gptMovies.map(movie=> searchMovieTmdb(movie));
     //convert array of promises to data after promises are resolved
     const tmdbResults = await Promise.all(promiseArray);
 
-
+      
     dispatch(addGptMovieResult({movieNames:gptMovies, movieResults: tmdbResults}));
 
 }
