@@ -59,7 +59,7 @@ const Header = () => {
         
         <div className='absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-screen flex flex-col md:flex-row justify-between '>
             <img 
-            className='w-44 mx-auto md:mx-0'
+            className='w-44 mx-auto md:mx-0' onClick={()=> navigate("/")}
             src={LOGO} alt="logo" />
   {auth.currentUser && (
           <div className='flex items-center p-2'>
