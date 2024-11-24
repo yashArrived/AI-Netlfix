@@ -1,4 +1,4 @@
-# Netflix GPT
+# AI Netflix
 
 - Create React App
 - Configured TailwindCSS 
