@@ -108,7 +108,7 @@ const Login = () => {
     <> 
        <div>
         <Header/> 
-          <div className='absolute w-screen object-cover'>
+          <div className='absolute h-screen w-screen object-cover'>
     
        <img className=' h-screen w-full object-cover' src={BROWSE_BG_IMG} alt="" />
        </div>
